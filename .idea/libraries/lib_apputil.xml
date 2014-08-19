@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib-apputil">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/AppUtil/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/AppUtil/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/AppUtil/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/AppUtil/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
