@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib-agent">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Agent/webContent/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/Agent/webContent/lib" recursive="false" />
+  </library>
+</component>

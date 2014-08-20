@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	 "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="log4jInitialization"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>${log4j.file}</value>
+			</list>
+		</property>
+	</bean>
+
+
+    <bean id="placeholderConfig2" class="com.moto.agent.snmp.util.PropertyPlaceholderConfigurerEX">
+        <property name="location">
+            <value>./conf/agent.conf</value>
+        </property>
+        <property name="fileEncoding">
+            <value>utf-8</value>
+        </property>
+        <property name="secutiry">
+            <value>false</value>
+        </property>
+        <property name="desEncrypt">
+            <ref local="desEncrypt" />
+        </property>
+    </bean>
+
+    <bean id="desEncrypt" class="com.moto.agent.snmp.util.DESEncrypt"/>
+
+<!--	<bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="./conf/agent.conf" />
+	</bean>-->
+
+	<!-- <bean id="clearSTSDataTask" class="com.moto.agent.snmp.util.ClearSTSDataTask"
+		init-method="init">
+		<property name="appContext">
+			<ref bean="appContext"></ref>
+		</property>
+	</bean> -->
+
+
+	<bean id="snmpMain" class="com.moto.agent.snmp.SnmpMain"
+		init-method="run">
+		<property name="appContext">
+			<ref bean="appContext"></ref>
+		</property>
+	</bean>
+	
+	
+	<bean id="appContext" class="com.moto.agent.snmp.util.AppContext" init-method="init">
+		<property name="omcService">
+			<ref bean="omcService"></ref>
+		</property>
+		<property name="snmpListonPort">
+			<value>${agent.snmpListonPort}</value>
+		</property>
+		<property name="mibPath">
+			<value>${mib.path}</value>
+		</property>
+		<property name="grading">
+			<value>${tps.grading}</value>
+		</property>
+		<property name="interval">
+			<value>${trap.interval}</value>
+		</property>
+		<property name="trapIp">
+			<value>${agent.trapIp}</value>
+		</property>
+		<property name="trapPort">
+			<value>${agent.trapPort}</value>
+		</property>
+		<property name="multicastIp">
+			<value>${agent.multicastIp}</value>
+		</property>
+		<property name="multicastPort">
+			<value>${agent.multicastPort}</value>
+		</property>
+		<property name="alarmUseRate">
+			<value>${cpu.alarmUseRate}</value>
+		</property>
+		<property name="clearDays">
+			<value>${agent.clearDays}</value>
+		</property>
+		<property name="autoReport">
+			<value>${agent.autoReport}</value>
+		</property>
+		<property name="community">
+			<value>${snmp.community}</value>
+		</property>
+		
+		<property name="cpuRecordPath">
+			<value>${agent.cpuRecordPath}</value>
+		</property>
+		<property name="getCpuInterval">
+			<value>${agent.getCpuInterval}</value>
+		</property>
+		<property name="memoryAlarmUseRate">
+			<value>${memory.alarmUseRate}</value>
+		</property>
+		<property name="diskAlarmUseRate">
+			<value>${disk.alarmUseRate}</value>
+		</property>
+		<property name="statSysInterval">
+			<value>${agent.statSysInterval}</value>
+		</property>
+<!-- 		<property name="dataSource"> -->
+<!-- 			<ref local="dataSource"/> -->
+<!-- 		</property> -->
+		<property name="diskMounted">
+			<value>${disk.mounted}</value>
+		</property>
+		<property name="appIndex">
+			<value>${app.index}</value>
+		</property>
+		<property name="switchKPIThread">
+			<value>${agent.switchKPIThread}</value>
+		</property>
+	</bean>
+
+	<bean id="omcService" class="com.moto.agent.snmp.service.OmcService">
+		<property name="baseDao">
+			<ref bean="baseDao"></ref>
+		</property>
+	</bean>
+	
+
+	<bean id="sqlManager" class="com.dlk.sweb.dao.SQLManager"
+		init-method="init">
+		<property name="sqlFile">
+			<value>./conf/sql.conf</value>
+		</property>
+	</bean>
+
+	<bean id="baseDao" class="com.dlk.sweb.dao.GeneralDAO">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlManager">
+			<ref bean="sqlManager" />
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>${sql.server.db.driver}</value>
+		</property>
+		<property name="url">
+			<value>${sql.server.db.url}</value>
+		</property>
+		<property name="username">
+			<value>${sql.server.db.username}</value>
+		</property>
+		<property name="password">
+			<value>${sql.server.db.password}</value>
+		</property>
+		<property name="maxActive">
+			<value>12</value>
+		</property>
+	</bean>
+
+</beans>
