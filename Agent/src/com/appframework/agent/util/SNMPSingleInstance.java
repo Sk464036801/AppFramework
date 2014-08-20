@@ -5,6 +5,8 @@ package com.appframework.agent.util;
 
 import java.io.IOException;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.snmp4j.Snmp;
 import org.snmp4j.TransportMapping;
 import org.snmp4j.transport.DefaultUdpTransportMapping;
@@ -15,6 +17,8 @@ import org.snmp4j.transport.DefaultUdpTransportMapping;
  * 2013-10-31
  */
 public class SNMPSingleInstance {
+
+    private static final Log logger = LogFactory.getLog(SNMPSingleInstance.class);
 
     private static class SingletonHolder {  
     	private static final SNMPSingleInstance INSTANCE = new SNMPSingleInstance();  
@@ -32,8 +36,7 @@ public class SNMPSingleInstance {
 		snmp = new Snmp(transport);
 		transport.listen();
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+        logger.error("SNMPSingleInstance Error",e);
 	}
 	return snmp;
 		

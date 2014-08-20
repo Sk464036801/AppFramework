@@ -28,7 +28,7 @@ public class ConfigHelper {
             ConfigurationFactory factory = new ConfigurationFactory(strfile);
 //			URL configURL = new File(strfile).toURL();
 //			factory.setConfigurationFileName(configURL.toString());
-            config = factory.getConfiguration();
+//            config = factory.getConfiguration();
         } catch (Exception e) {
             e.printStackTrace();
         }

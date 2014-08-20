@@ -4,13 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;   
 import java.util.ArrayList;   
 import java.util.Iterator;   
-import java.util.List;   
-
-import com.moto.sqm.model.bms.sysManagement.Province;
-import com.moto.sqm.model.bms.sysManagement.User;
-
-import flex.messaging.FlexContext;
-import flex.messaging.FlexSession;
+import java.util.List;
   
 /**  
  * @author Alpha  

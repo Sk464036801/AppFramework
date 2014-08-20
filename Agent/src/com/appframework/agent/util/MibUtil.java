@@ -55,7 +55,6 @@ public class MibUtil {
                 }*/
                 mibValues.add(mib.getValue().toString());
                 val.put(mib.getValue().toString(), mib.getLevel()+"");
-                	//System.out.println("name:"+mib.getName().split(" ")[0]+"==="+mib.getLevel()+"=="+mib.getValue());
             }
         }
     }
@@ -146,7 +145,7 @@ public class MibUtil {
         if (hasParent(oid)) {
             parent = addToTree( oid.getParent());
         } else {
-            parent = new MibNode("李水平", null);
+            parent = new MibNode("MibNode", null);
         }
 
         // Check if node already added
@@ -161,7 +160,6 @@ public class MibUtil {
         name = oid.getName() + " (" + oid.getValue() + ")";
         node = new MibNode(name, oid);
         parent.add(node);
-      //  System.out.println(oid.getSymbol()+"====" +node.getSiblingCount());
         return node;
     }
     

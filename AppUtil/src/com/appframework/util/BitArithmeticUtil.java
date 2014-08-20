@@ -1,5 +1,8 @@
 package com.appframework.util;
 
+/**
+ *常用二进制算法
+ */
 public class BitArithmeticUtil {
 	
 	public static BitArithmeticUtil instance= null;
@@ -110,5 +113,26 @@ public class BitArithmeticUtil {
 //	new |= ((old >> row) & 1) << (15 – k)
 //	(9)设s不等于全0，代码寻找最右边为1的位的序号j:
 //	for(j = 0; ((1 << j) & s) == 0; j++) ;
+
+    public static void main(String[] args) {
+
+        if (BitArithmeticUtil.isEvenNumber(4)){
+            System.out.println(" true");
+        }else {
+            System.out.println("false");
+        }
+
+        //3 = 0011
+        //5 = 0101
+        //6 = 0110
+
+        //9 = 1001
+        //10= 1010
+        //3 = 0011
+        System.out.println(BitArithmeticUtil.average(3, 5));
+
+        BitArithmeticUtil.switchNumber(9, 10);
+
+    }
 
 }

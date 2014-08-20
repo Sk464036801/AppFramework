@@ -15,9 +15,9 @@
 	</bean>
 
 
-    <bean id="placeholderConfig2" class="com.moto.agent.snmp.util.PropertyPlaceholderConfigurerEX">
+    <bean id="placeholderConfigEX" class="com.appframework.agent.util.PropertyPlaceholderConfigurerEX">
         <property name="location">
-            <value>./conf/agent.conf</value>
+            <value>${agent.file}</value>
         </property>
         <property name="fileEncoding">
             <value>utf-8</value>
@@ -30,7 +30,7 @@
         </property>
     </bean>
 
-    <bean id="desEncrypt" class="com.moto.agent.snmp.util.DESEncrypt"/>
+    <bean id="desEncrypt" class="com.appframework.agent.util.DESEncrypt"/>
 
 <!--	<bean id="placeholderConfig"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -45,106 +45,17 @@
 	</bean> -->
 
 
-	<bean id="snmpMain" class="com.moto.agent.snmp.SnmpMain"
+	<bean id="snmpMain" class="com.appframework.agent.snmp.SnmpMain"
 		init-method="run">
 		<property name="appContext">
 			<ref bean="appContext"></ref>
 		</property>
 	</bean>
-	
-	
-	<bean id="appContext" class="com.moto.agent.snmp.util.AppContext" init-method="init">
-		<property name="omcService">
-			<ref bean="omcService"></ref>
-		</property>
-		<property name="snmpListonPort">
-			<value>${agent.snmpListonPort}</value>
-		</property>
-		<property name="mibPath">
-			<value>${mib.path}</value>
-		</property>
-		<property name="grading">
-			<value>${tps.grading}</value>
-		</property>
-		<property name="interval">
-			<value>${trap.interval}</value>
-		</property>
-		<property name="trapIp">
-			<value>${agent.trapIp}</value>
-		</property>
-		<property name="trapPort">
-			<value>${agent.trapPort}</value>
-		</property>
-		<property name="multicastIp">
-			<value>${agent.multicastIp}</value>
-		</property>
-		<property name="multicastPort">
-			<value>${agent.multicastPort}</value>
-		</property>
-		<property name="alarmUseRate">
-			<value>${cpu.alarmUseRate}</value>
-		</property>
-		<property name="clearDays">
-			<value>${agent.clearDays}</value>
-		</property>
-		<property name="autoReport">
-			<value>${agent.autoReport}</value>
-		</property>
-		<property name="community">
-			<value>${snmp.community}</value>
-		</property>
-		
-		<property name="cpuRecordPath">
-			<value>${agent.cpuRecordPath}</value>
-		</property>
-		<property name="getCpuInterval">
-			<value>${agent.getCpuInterval}</value>
-		</property>
-		<property name="memoryAlarmUseRate">
-			<value>${memory.alarmUseRate}</value>
-		</property>
-		<property name="diskAlarmUseRate">
-			<value>${disk.alarmUseRate}</value>
-		</property>
-		<property name="statSysInterval">
-			<value>${agent.statSysInterval}</value>
-		</property>
-<!-- 		<property name="dataSource"> -->
-<!-- 			<ref local="dataSource"/> -->
-<!-- 		</property> -->
-		<property name="diskMounted">
-			<value>${disk.mounted}</value>
-		</property>
-		<property name="appIndex">
-			<value>${app.index}</value>
-		</property>
-		<property name="switchKPIThread">
-			<value>${agent.switchKPIThread}</value>
-		</property>
-	</bean>
 
-	<bean id="omcService" class="com.moto.agent.snmp.service.OmcService">
-		<property name="baseDao">
-			<ref bean="baseDao"></ref>
-		</property>
-	</bean>
-	
+    <bean id="appContext" class="com.appframework.agent.util.AppContext">
 
-	<bean id="sqlManager" class="com.dlk.sweb.dao.SQLManager"
-		init-method="init">
-		<property name="sqlFile">
-			<value>./conf/sql.conf</value>
-		</property>
-	</bean>
 
-	<bean id="baseDao" class="com.dlk.sweb.dao.GeneralDAO">
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
-		<property name="sqlManager">
-			<ref bean="sqlManager" />
-		</property>
-	</bean>
+    </bean>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">

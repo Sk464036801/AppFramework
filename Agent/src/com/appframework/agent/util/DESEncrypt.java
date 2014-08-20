@@ -60,7 +60,7 @@ public class DESEncrypt {
 	/**
 	 * 对字符串解密
 	 *
-	 * @param buff
+	 * @param str
 	 * @return
 	 * @throws java.security.InvalidKeyException
 	 * @throws javax.crypto.IllegalBlockSizeException

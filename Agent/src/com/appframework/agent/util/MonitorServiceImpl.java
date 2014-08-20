@@ -12,17 +12,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import com.appframework.agent.model.MonitorInfoBean;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import sun.management.ManagementFactory;
 
-import com.moto.agent.model.MonitorInfoBean;
 import com.sun.management.OperatingSystemMXBean;
 
 /**
- * for windows
- * @author xum
+ * for windows, Linux
  *
  */
 public class MonitorServiceImpl  {
@@ -39,8 +38,6 @@ public class MonitorServiceImpl  {
 		long totalMemory = Runtime.getRuntime().totalMemory() / kb;
 		long freeMemory = Runtime.getRuntime().freeMemory() / kb;
 		long maxMemory = Runtime.getRuntime().maxMemory() / kb;
-		
-		//OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
 		
 		OperatingSystemMXBean osmxb = null;
 		if(System.getProperty("java.version").contains("1.6")){
