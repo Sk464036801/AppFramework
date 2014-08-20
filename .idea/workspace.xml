@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c87694ae-bc77-4823-b65a-5cb22ddc877d" name="Default" comment="" />
+    <list default="true" id="c87694ae-bc77-4823-b65a-5cb22ddc877d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="AppFramework.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,6 +75,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -139,7 +143,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -151,6 +154,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,12 +461,13 @@
       <updated>1408440632092</updated>
       <workItem from="1408440634504" duration="522000" />
       <workItem from="1408441210066" duration="1461000" />
-      <workItem from="1408447897565" duration="3398000" />
+      <workItem from="1408447897565" duration="3746000" />
+      <workItem from="1408499867086" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5381000" />
+    <option name="totallyTimeSpent" value="5741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="22" width="1392" height="878" extended-state="6" />
@@ -472,7 +477,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -513,307 +518,198 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/CallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="12" column="37" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Wang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="43" column="20" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Li.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="69" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="660">
-          <folding />
-        </state>
+        <state line="15" column="69" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="25" column="34" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/CallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="12" column="37" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Wang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="43" column="20" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Li.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="69" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="660">
-          <folding />
-        </state>
+        <state line="15" column="69" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/src/com/appframework/callback/async/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="25" column="34" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CallBack/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="707">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="527" selection-end="527" vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="707" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/ftp二进制与ascii传输方式区别.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="27" column="20" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Base64DecodingException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.366485" vertical-offset="226" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="33" column="13" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.366485" vertical-offset="226" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.076283" vertical-offset="3780" max-vertical-offset="20280">
-          <folding />
-        </state>
+        <state line="8" column="35" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.076283" vertical-offset="3780" max-vertical-offset="20280" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/CConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="57" selection-start="252" selection-end="252" vertical-scroll-proportion="0.28610355" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
+        <state line="14" column="57" selection-start="252" selection-end="252" vertical-scroll-proportion="0.28610355" vertical-offset="0" max-vertical-offset="915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/ConfigHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="49" selection-start="742" selection-end="742" vertical-scroll-proportion="0.613079" vertical-offset="0" max-vertical-offset="885">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="30" column="49" selection-start="742" selection-end="742" vertical-scroll-proportion="0.613079" vertical-offset="0" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/CharTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.66574204" vertical-offset="210" max-vertical-offset="2955">
-          <folding />
-        </state>
+        <state line="46" column="23" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.66574204" vertical-offset="210" max-vertical-offset="2955" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="990">
-          <folding>
-            <marker date="1408457166000" expanded="true" signature="-1:-1" placeholder="select seria..tblserial..." />
-            <marker date="1408457166000" expanded="true" signature="-1:-1" placeholder="update tblse..." />
-          </folding>
-        </state>
+        <state line="22" column="13" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/CTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="42" selection-start="7224" selection-end="7224" vertical-scroll-proportion="0.0" vertical-offset="6105" max-vertical-offset="8805">
-          <folding />
-        </state>
+        <state line="274" column="42" selection-start="7224" selection-end="7224" vertical-scroll-proportion="0.0" vertical-offset="6105" max-vertical-offset="8805" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/DateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5280">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-            <element signature="e#676#677#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5280" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7020">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1036#1037#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/DealString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/DebugOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Dom4jHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.12482663" vertical-offset="0" max-vertical-offset="2715">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="6" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.12482663" vertical-offset="0" max-vertical-offset="2715" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Escape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/ExecHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="19" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="4619" max-vertical-offset="5340">
-          <folding />
-        </state>
+        <state line="37" column="19" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="4619" max-vertical-offset="5340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/FileHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="1664" max-vertical-offset="2385">
-          <folding />
-        </state>
+        <state line="33" column="13" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="1664" max-vertical-offset="2385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/FileUploadUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="3435">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="24" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="3435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="52" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10995">
-          <folding />
-        </state>
+        <state line="15" column="52" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10995" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/Md5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="5415" max-vertical-offset="6165">
-          <folding />
-        </state>
+        <state line="12" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="5415" max-vertical-offset="6165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/MD5Encrypt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/MyFileFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="1695">
-          <folding />
-        </state>
+        <state line="14" column="13" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="1695" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/PropsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1350">
-          <folding />
-        </state>
+        <state line="20" column="33" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="1350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/RegExUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3120">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3120" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/SimpleConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="51" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1125">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="23" column="51" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/ThumbnailGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="16" column="13" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/UploadHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.1331484" vertical-offset="862" max-vertical-offset="2730">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="3" column="29" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.1331484" vertical-offset="862" max-vertical-offset="2730" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/MyJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="176" selection-end="176" vertical-scroll-proportion="0.22479564" vertical-offset="0" max-vertical-offset="734">
-          <folding />
-        </state>
+        <state line="11" column="21" selection-start="176" selection-end="176" vertical-scroll-proportion="0.22479564" vertical-offset="0" max-vertical-offset="734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppUtil/src/com/appframework/util/IPDeal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.92098093" vertical-offset="826" max-vertical-offset="1560">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <marker date="1408458462000" expanded="true" signature="-1:-1" placeholder="select * fro..fullip..." />
-          </folding>
-        </state>
+        <state line="10" column="32" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.92098093" vertical-offset="826" max-vertical-offset="1560" />
       </provider>
     </entry>
   </component>
