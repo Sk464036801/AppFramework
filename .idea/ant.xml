@@ -2,6 +2,7 @@
 <project version="4">
   <component name="AntConfiguration">
     <buildFile url="file://$PROJECT_DIR$/TemplateApp/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/WebSpider/build.xml" />
   </component>
 </project>
 

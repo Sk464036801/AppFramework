@@ -3,15 +3,20 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Agent/Agent.iml" filepath="$PROJECT_DIR$/Agent/Agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgentProxy/AgentProxy.iml" filepath="$PROJECT_DIR$/AgentProxy/AgentProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/AppUtil/AppUtil.iml" filepath="$PROJECT_DIR$/AppUtil/AppUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/CallBack/CallBack.iml" filepath="$PROJECT_DIR$/CallBack/CallBack.iml" />
       <module fileurl="file://$PROJECT_DIR$/DBConnection/DBConnection.iml" filepath="$PROJECT_DIR$/DBConnection/DBConnection.iml" />
       <module fileurl="file://$PROJECT_DIR$/MassiveData/MassiveData.iml" filepath="$PROJECT_DIR$/MassiveData/MassiveData.iml" />
       <module fileurl="file://$PROJECT_DIR$/MibbleBrowser/MibbleBrowser.iml" filepath="$PROJECT_DIR$/MibbleBrowser/MibbleBrowser.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mina/Mina.iml" filepath="$PROJECT_DIR$/Mina/Mina.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletWeb/ServletWeb.iml" filepath="$PROJECT_DIR$/ServletWeb/ServletWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/Siger/Siger.iml" filepath="$PROJECT_DIR$/Siger/Siger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket/Socket.iml" filepath="$PROJECT_DIR$/Socket/Socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TemplateApp/TemplateApp.iml" filepath="$PROJECT_DIR$/TemplateApp/TemplateApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebService/WebService.iml" filepath="$PROJECT_DIR$/WebService/WebService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebSpider/WebSpider.iml" filepath="$PROJECT_DIR$/WebSpider/WebSpider.iml" />
     </modules>
   </component>
 </project>

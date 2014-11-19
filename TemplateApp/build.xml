@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<project name="sms_mail_server" basedir="." default="package">
+<project name="app_module_tmpl" basedir="." default="deploy">
 	<property name="message" value="Building the project."/>
-	<property name="webapp.name" value="smsMail"/>
+	<property name="webapp.name" value="appModuleTmpl"/>
 	<property name="webapp.dir" location="/Users/gk/webApps"/>
 	
 	<property name="src.dir" location="src"/>
@@ -71,14 +71,14 @@
 		<jar destfile="${dist.dir}/${dist.file}" basedir="${output}">
 			
 			<manifest>
-				<attribute name="Main-Class" value="com.ever.server.Launcher"/>
+				<attribute name="Main-Class" value="com.ever.server.com.web.spider.Launcher"/>
 				<attribute name="Class-Path" value="${libs.project}"/>
 			</manifest>
 			
 		</jar>
 	</target>
 
-	<target name="wsdeploy" depends="package">
+	<target name="deploy" depends="package">
 		<mkdir dir="${webapp.dir}/${webapp.name}"/>
 		<copy todir="${webapp.dir}/${webapp.name}">
 			<fileset dir="${webroot.dir}"/>

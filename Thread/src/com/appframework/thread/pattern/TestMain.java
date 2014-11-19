@@ -21,6 +21,9 @@ public class TestMain {
     }
 }
 
+/**
+ * 队列(使用了信号量，采用synchronized进行同步，采用lock进行同步会出错，或许是还不知道实现的方法)
+ */
 class TestQueue {
 
     public static Object signal=new Object();

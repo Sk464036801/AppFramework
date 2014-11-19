@@ -1,7 +1,7 @@
 package com.web.spider.thread;
 
-import com.template.app.model.AppContext;
-import com.template.app.util.AppUtils;
+import com.web.spider.model.AppContext;
+import com.web.spider.util.AppUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

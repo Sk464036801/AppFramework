@@ -72,7 +72,7 @@
         <jar destfile="${dist.dir}/${dist.file}" basedir="${output}">
 
             <!-- 			<manifest>
-                            <attribute name="Main-Class" value="com.ever.server.Launcher"/>
+                            <attribute name="Main-Class" value="com.ever.server.com.web.spider.Launcher"/>
                             <attribute name="Class-Path" value="${libs.project}"/>
                         </manifest> -->
 

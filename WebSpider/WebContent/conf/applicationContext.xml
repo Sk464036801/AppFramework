@@ -6,7 +6,7 @@
 	<bean id="placeholderConfig"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">		
 		<property name="location">
-			<value>conf/data.conf</value>
+			<value>conf/appModule.conf</value>
 		</property>
 				
 		<property name="fileEncoding">

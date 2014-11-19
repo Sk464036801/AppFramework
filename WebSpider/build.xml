@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<project name="sms_mail_server" basedir="." default="package">
+<project name="web_spider" basedir="." default="deploy">
 	<property name="message" value="Building the project."/>
-	<property name="webapp.name" value="smsMail"/>
+	<property name="webapp.name" value="webSpider"/>
 	<property name="webapp.dir" location="/Users/gk/webApps"/>
 	
 	<property name="src.dir" location="src"/>
 	<property name="lib.dir" location="WebContent/lib"/>
 	<property name="output" location="classes"/>
 	<property name="dist.dir" location="dist"/>
-	<property name="dist.file" value="sms_mail.jar"/>
+	<property name="dist.file" value="web_spider.jar"/>
 	<property name="webroot.dir" location="WebContent"/>
 
 	<path id="compile.classpath">
@@ -78,7 +78,7 @@
 		</jar>
 	</target>
 
-	<target name="wsdeploy" depends="package">
+	<target name="deploy" depends="package">
 		<mkdir dir="${webapp.dir}/${webapp.name}"/>
 		<copy todir="${webapp.dir}/${webapp.name}">
 			<fileset dir="${webroot.dir}"/>

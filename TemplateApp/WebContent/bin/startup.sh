@@ -23,5 +23,5 @@ done
 export CLASSPATH
 
 cd $SERVER_HOME
-nohup ${JAVA_HOME}/bin/java -Xmx512m com.example.data.acquisition.Launcher > /dev/null 2>&1 &
-echo 'Data Acquisition Server Started'
+nohup ${JAVA_HOME}/bin/java -Xmx512m com.template.app.Launcher > /dev/null 2>&1 &
+echo 'App Module Server Started'
