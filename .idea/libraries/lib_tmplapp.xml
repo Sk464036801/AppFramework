@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib_tmplapp">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/TemplateApp/WebContent/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/TemplateApp/WebContent/lib" recursive="false" />
+  </library>
+</component>

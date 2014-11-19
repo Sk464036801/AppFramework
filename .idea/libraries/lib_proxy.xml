@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib-proxy">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/AgentProxy/WebContent/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/AgentProxy/WebContent/lib" recursive="false" />
+  </library>
+</component>

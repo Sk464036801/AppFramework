@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<project name="sms_mail_server" basedir="." default="package">
+	<property name="message" value="Building the project."/>
+	<property name="webapp.name" value="smsMail"/>
+	<property name="webapp.dir" location="/Users/gk/webApps"/>
+	
+	<property name="src.dir" location="src"/>
+	<property name="lib.dir" location="WebContent/lib"/>
+	<property name="output" location="classes"/>
+	<property name="dist.dir" location="dist"/>
+	<property name="dist.file" value="sms_mail.jar"/>
+	<property name="webroot.dir" location="WebContent"/>
+
+	<path id="compile.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<pathconvert property="libs.project" pathsep=" ">
+		<mapper>
+			<chainedmapper>
+				<!-- remove absolute path -->
+				<flattenmapper />
+				<!-- add lib/ prefix -->
+				<globmapper from="*" to="*" />
+			</chainedmapper>
+		</mapper>
+		<path>
+			<!-- lib.home contains all jar files, in several subdirectories -->
+			<fileset dir="${lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+	</pathconvert>
+
+	<target name="main" depends="init, compile">
+		<echo>${message}</echo>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${output}"/>
+		<mkdir dir="${webroot.dir}/lib"/>
+		<mkdir dir="${webroot.dir}/log"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="${src.dir}" destdir="${output}" classpathref="compile.classpath" 
+			debug="true" includeantruntime="true">
+		</javac>
+	</target>
+
+	<target name="native2ascii">
+		<copy todir="${output}">
+			<fileset dir="${src.dir}">
+				<include name="*.zh"/>
+				<include name="*.property"/>
+			</fileset>
+		</copy>
+		<native2ascii dest="${output}" src="${src.dir}" encoding="GBK" includes="**/*.zh" ext="_zh.properties">
+		</native2ascii>
+		<copy todir="${output}">
+			<fileset dir="${output}">
+			</fileset>
+			<mapper type="glob" from="*_zh.properties" to="*.properties">
+			</mapper>
+		</copy>
+	</target>
+
+	<target name="package" depends="init,compile,native2ascii">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${dist.file}" basedir="${output}">
+			
+			<manifest>
+				<attribute name="Main-Class" value="com.ever.server.Launcher"/>
+				<attribute name="Class-Path" value="${libs.project}"/>
+			</manifest>
+			
+		</jar>
+	</target>
+
+	<target name="wsdeploy" depends="package">
+		<mkdir dir="${webapp.dir}/${webapp.name}"/>
+		<copy todir="${webapp.dir}/${webapp.name}">
+			<fileset dir="${webroot.dir}"/>
+		</copy>
+		<copy todir="${webapp.dir}/${webapp.name}/lib">
+			<fileset dir="${dist.dir}"/>
+		</copy>
+	</target>
+
+</project>

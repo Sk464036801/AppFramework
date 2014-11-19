@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib-spider">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/WebSpider/WebContent/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/WebSpider/WebContent/lib" recursive="false" />
+  </library>
+</component>

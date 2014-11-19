@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+    <bean id="MainServer" class="com.moto.agent.proxy.thread.MainThread" init-method="start">
+        <property name="appContext">
+            <ref local="appContext"/>
+        </property>
+    </bean>
+    <bean id="systemMonitor" class="com.moto.agent.proxy.monitor.SystemMonitorThread" init-method="start">
+        <property name="appContext">
+            <ref local="appContext"/>
+        </property>
+        <property name="cpuAlarm">
+            <value>8</value>
+        </property>
+        <property name="cancelCpuAlarm">
+            <value>4104</value>
+        </property>
+        <property name="memoryAlarm">
+            <value>9</value>
+        </property>
+        <property name="cancelMemoryAlarm">
+            <value>4105</value>
+        </property>
+        <property name="storageDiskAlarm">
+            <value>10</value>
+        </property>
+        <property name="cancelStorageDiskAlarm">
+            <value>4112</value>
+        </property>
+    </bean>
+
+    <bean id="appContext" class="com.moto.agent.proxy.model.AppContext">
+        <property name="userName">
+            <value>${connect.user.name}</value>
+        </property>
+        <property name="password">
+            <value>${connect.password}</value>
+        </property>
+        <property name="serverPort">
+            <value>${server.listen.port}</value>
+        </property>
+        <property name="ldleTime">
+            <value>${session.ldle.time}</value>
+        </property>
+        <property name="trapIP">
+            <value>${trap.ip}</value>
+        </property>
+        <property name="trapPort">
+            <value>${trap.port}</value>
+        </property>
+        <property name="community">
+            <value>${trap.community}</value>
+        </property>
+        <property name="communityTimeout">
+            <value>${community.timeout}</value>
+        </property>
+        <property name="fileConfig">
+            <value>conf/oidMap.properties</value>
+        </property>
+        <property name="cpuAlarmRate">
+            <value>${cpu.rate.alarm}</value>
+        </property>
+        <property name="memoryAlarmRate">
+            <value>${memory.rate.alarm}</value>
+        </property>
+        <property name="storageDiskAlarmRate">
+            <value>${disk.rate.alarm}</value>
+        </property>
+        <property name="storageDiskMounted">
+            <value>${alarm.disk.mounted}</value>
+        </property>
+        <property name="alarmThreadInterval">
+            <value>${alarm.thread.interval}</value>
+        </property>
+    </bean>
+
+</beans>
